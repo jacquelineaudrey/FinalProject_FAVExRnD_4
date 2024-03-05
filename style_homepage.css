@@ -1,0 +1,136 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+/* NAVBAR STYLING */
+nav {
+  display: flex;
+  flex-direction: row;
+  padding: 1.25rem 5rem 1.25rem 5rem;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--Cream, #f9f1e9);
+}
+
+nav li {
+  display: block;
+  width: 100%;
+  padding: 5px;
+}
+
+.nav-left {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1rem;
+}
+
+.nav-right {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 1rem;
+}
+
+.nav-left li a,
+.nav-right li a {
+  text-decoration: none;
+  color: var(--Bison, #392a2a);
+  font-family: Archivo;
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  position: relative;
+}
+
+nav li a:hover {
+  text-decoration: none;
+  color: var(--Bison, #6b5e5e);
+  font-family: Archivo;
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.nav-left li a::after,
+.nav-right li a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #6b5e5e;
+  transition: width 0.5s ease-in-out;
+}
+
+.nav-left li a:hover::after,
+.nav-right li a:hover::after {
+  width: 100%;
+}
+
+.navbar-mobile-hamburger {
+  transform: translateY(40%);
+  display: none;
+  font-size: 2rem;
+  top: 50%;
+  right: 20px;
+  background-color: none;
+  cursor: pointer;
+  position: absolute;
+}
+
+#check {
+  display: none;
+}
+
+/* MEDIA QUERY NAVBAR*/
+
+@media (max-width: 780px) {
+  .nav-left {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 40%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: -100%;
+    z-index: 100;
+    transition: all 0.5s ease-in;
+    text-align: center;
+    background: var(--Cream, #e2dcd7);
+    transform: translateX(25%);
+  }
+
+  .nav-right {
+    display: none;
+  }
+
+  .navbar-mobile-hamburger {
+    display: block;
+    font-size: 2rem;
+    top: 20px;
+    right: 20px;
+    position: fixed;
+    z-index: 101;
+    cursor: pointer;
+  }
+
+  #check:checked ~ .navbar-mobile-hamburger {
+    display: none;
+  }
+
+  #check:checked ~ nav .nav-left {
+    right: 10%;
+  }
+
+  #check:not(:checked) ~ nav .nav-left {
+    right: -50%;
+  }
+}
