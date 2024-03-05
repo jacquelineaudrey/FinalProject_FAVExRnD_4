@@ -442,7 +442,7 @@ main {
 .cp-cont {
   width: 100%;
   height: auto;
-  padding: 2rem 1rem 1rem 2rem;
+  padding: 2rem 2rem 2rem 2rem;
   background: var(--Bison, #392a2a);
 }
 .title-ft h1 {
@@ -453,7 +453,7 @@ main {
   font-weight: 400;
   line-height: 120%;
   padding-top: 1rem;
-  padding-bottom: 1rem;
+  padding-bottom: 9rem;
 }
 
 .container-contactperson {
@@ -468,21 +468,20 @@ main {
 .contact-us h1 {
   color: var(--Cream, #f9f1e9);
   font-family: "Noto Serif";
-  font-size: 1.75rem;
+  font-size: 1.5rem;
   font-style: normal;
   font-weight: 400;
-  line-height: 120%;
+  padding-bottom: 1.1rem;
 }
 
 .content-nt .gml {
   color: var(--Cream, #f9f1e9);
   font-family: Archivo;
-  font-size: 1rem;
+  font-size: 0.9rem;
   font-style: normal;
-  font-weight: 600;
   line-height: normal;
   text-decoration-line: underline;
-  padding-top: 2rem;
+  padding-top: 1rem;
 }
 
 .content-nt .phone {
@@ -490,7 +489,6 @@ main {
   font-family: Archivo;
   font-size: 1rem;
   font-style: normal;
-  font-weight: 500;
   line-height: normal;
   padding-top: 1rem;
   padding-bottom: 1rem;
@@ -501,7 +499,6 @@ main {
   font-family: Archivo;
   font-size: 1rem;
   font-style: normal;
-  font-weight: 500;
   line-height: normal;
   padding-bottom: 2rem;
 }
@@ -511,10 +508,14 @@ main {
   font-family: Archivo;
   font-size: 1rem;
   font-style: normal;
-  font-weight: 700;
   line-height: normal;
   text-decoration-line: underline;
   padding-bottom: 1rem;
+}
+
+.content-nt a:hover,
+.content-nt .gml:hover {
+  color: #7d7777;
 }
 
 /* TRADEMARK */
@@ -535,4 +536,83 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.imagea {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  padding-bottom: 5rem;
+  cursor: pointer;
+}
+
+.imagea > * {
+  background-color: white;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50px;
+}
+
+@media (max-width: 780px) {
+  .cp-cont {
+    padding: 10px;
+    height: 15rem;
+  }
+  .title-ft h1 {
+    font-size: 1rem;
+  }
+
+  .nt-us h1,
+  .st-us h1,
+  .contact-us h1 {
+    color: var(--Cream, #f9f1e9);
+    font-family: "Noto Serif";
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    padding: 0;
+  }
+
+  .content-nt .gml {
+    font-size: 0.5rem;
+  }
+
+  .content-nt .phone {
+    font-size: 0.4rem;
+    padding-bottom: 1rem;
+  }
+
+  .content-nt .adrs {
+    font-size: 0.5rem;
+  }
+
+  .content-nt a {
+    color: var(--Cream, #f9f1e9);
+    font-family: Archivo;
+    font-size: 0.5rem;
+    padding: 0;
+  }
+
+  .imagea {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    padding-bottom: 5rem;
+    cursor: pointer;
+  }
+
+  .imagea > * {
+    background-color: white;
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50px;
+  }
+
+  .imgft {
+    transform: scale(70%);
+  }
+
+  .tm-cont p {
+    font-size: 0.5rem;
+  }
 }
