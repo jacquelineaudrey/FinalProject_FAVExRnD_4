@@ -3,6 +3,26 @@
   margin: 0;
   box-sizing: border-box;
 }
+/* BG ELEMENT */
+.elemt-bg {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  min-height: 100vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  z-index: -1;
+}
+
+.elemt-bg > * {
+  min-height: 0;
+}
+
+
+
 /* NAVBAR STYLING */
 nav {
   display: flex;
@@ -85,6 +105,12 @@ nav li a:hover {
   position: absolute;
 }
 
+/* UNTUK ELEMET HARUS DI RELATIVEIN */
+nav {
+  position: relative;
+  z-index: 1;
+}
+
 #check {
   display: none;
 }
@@ -136,7 +162,10 @@ nav li a:hover {
 }
 
 /* MAIN */
+
 main {
+  position: relative;
+  z-index: 1;
   background: var(--Cream, #f9f1e9);
 }
 
