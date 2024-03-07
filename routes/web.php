@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\RegisterController;
 
 Route::view('/', 'products');
 Route::get('/','ProductController@index')->name('products');
@@ -10,3 +11,5 @@ Route::get('/remove/id','ProductController@removeFromCart')->name('remove');
 
 Route::get('/login', 'LoginController@login');
 Route::post('/login/auth', 'LoginController@loginauth')->name('logAuth');
+
+Route::get('/register', [RegisterController::class, 'register'])->name('register');
