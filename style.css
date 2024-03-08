@@ -27,7 +27,6 @@ body {
     justify-content: center;
     align-items: center;
     color: #392A2A;
-    overflow-y: auto;
 }
 
 .wrapper .header {
