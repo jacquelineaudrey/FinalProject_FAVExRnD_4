@@ -8,7 +8,6 @@
 }
 
 body {
-    overflow: hidden;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -18,14 +17,17 @@ body {
 
 .wrapper {
     position: relative;
-    width: 400px;
-    height: 650px;
+    width: 40%;
+    margin-top: 5%;
+    max-width: 550px;
+    min-height: 90vh;
     background-color: transparent;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     color: #392A2A;
+    overflow-y: auto;
 }
 
 .wrapper .header {
@@ -163,9 +165,10 @@ input:-webkit-autofill:active  {
 
 .elem-left {
     width: 20vw; 
-    height: 80vh; 
+    height: 100%; 
     background-image: url('./images/Vector 2.svg'); 
     background-size: contain;
+    background-position: top left;
     background-repeat: no-repeat;
     position: absolute;
     top: 0;
@@ -175,12 +178,12 @@ input:-webkit-autofill:active  {
 
 .elem-right {
     width: 20vw; 
-    height: 80vh; 
+    height: 100%; 
     background-image: url('./images/Vector 1.svg'); 
     background-size: contain;
     background-position: bottom right; 
     background-repeat: no-repeat;
-    position: absolute; 
+    position: fixed; 
     bottom: 0; 
     right: 0; 
     z-index: -1;
