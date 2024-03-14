@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\AdminController;
 
 Route::view('/', 'products');
 Route::get('/','ProductController@index')->name('products');
@@ -10,3 +11,18 @@ Route::get('/remove/id','ProductController@removeFromCart')->name('remove');
 
 Route::get('/login', 'LoginController@login');
 Route::post('/login/auth', 'LoginController@loginauth')->name('logAuth');
+
+
+//Buat masukkin data ke database
+Route::get('/admin', [AdminController::class, 'admin']);
+Route::post('/create-admin', [AdminController::class, 'createAdmin']);
+
+//Buat read data yang ada di database
+Route::get('/read-admin', [AdminController::class, 'readAdmin']);
+
+
+Route::get('/edit-admin/{id}', [AdminController::class, 'editAdmin']);
+Route::patch('update-admin/{id}', [AdminController::class, 'updateAdmin']);
+
+
+Route::delete('/delete-admin/{id}', [AdminController::class, 'deleteAdmin']);

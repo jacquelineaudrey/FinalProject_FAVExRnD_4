@@ -1,10 +1,14 @@
+<<<<<<< HEAD
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
+=======
+>>>>>>> e946703b85b64ef694020e4dca474b36090b720b
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+<<<<<<< HEAD
 }
 
 body {
@@ -170,3 +174,241 @@ input:-webkit-autofill:active {
     right: 0;
     z-index: -1;
 }
+=======
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    width: 100%;
+    background: #e8e0d8;
+    position: relative;
+    display: flex;
+}
+
+#menu {
+    background-color: #392A2A;
+    width: 287px;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+#menu .logo {
+    display: flex;
+    align-items: center;
+    color: #392A2A;
+    padding: 20px 5px 0 90px;
+}
+
+#menu .panel {
+    font-size: 8px;
+    align-items: center;
+    
+    color: #F9F1E9;
+    padding: 10px 0 0 100px;
+}
+
+#menu .logo img {
+    width: 90px;
+}
+
+#menu .items {
+    margin-top: 40px;
+}
+
+#menu .items li {
+    list-style: none;
+    padding: 15xp 0;
+    transition: 0.3s ease;
+}
+
+#menu .items li:hover{
+    background: #515c7e;
+    cursor: pointer;
+}
+
+/* #menu .items li:nth-child(1){
+    border-left: 4px solid #ffffff;
+} */
+
+#menu .items li i{
+    color: rgb(from color r g b);
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    font-size: 14px;
+    margin: 0 10px 0 25px;
+}
+
+#menu .items li:hover i,
+#menu .items li:hover a {
+    color: #f3f4f6;
+}
+
+#menu .items li a{
+    text-decoration: none;
+    color: #C3C0C0;
+    font-weight: 300px;
+    transition: 0.3s ease;
+}
+
+#interface {
+    width: calc(100% - 287px);
+    margin-left: 287px;
+    position: relative;
+}
+
+#interface .navigation {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #F9F1E9;
+    padding: 15px 30px;
+    position: fixed;
+    width: calc(100% - 287px);
+
+}
+
+#interface .navigation .search {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 10px 14px;
+    border: 1px solid #d7dbe6;
+    border-radius: 4px;
+}
+
+#interface .navigation .search i {
+    margin-right: 14px;
+}
+
+#interface .navigation .search input {
+    border: none;
+    outline: none;
+    font-size: 14px;
+    background: #F9F1E9;
+
+}
+
+#interface .navigation .profile{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+}
+
+#interface .navigation .profile i{
+    margin-right: 20px;
+    font-size: 19px;
+    font-weight: 400;
+}
+
+#interface .navigation .profile h6{
+    font-size: 15px;
+    padding-right: 15px;
+}
+
+#interface .navigation .profile img{
+    width: 30px;
+    height: 30px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+#interface .dashboard{
+    display: flex;
+    justify-content: space-between;
+}
+
+.n1{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#menu-btn{
+    color: #2a4032;
+    font-size: 20px;
+    cursor: pointer;
+    margin-right: 20px;
+}
+
+.i-name{
+    color: #494949;
+    padding: 30px 30px 0 30px;
+    font-size: 24px;
+    font-weight: 700;
+    margin-top: 70px;
+}
+
+.i-names{
+    color: #494949;
+    padding: 30px 30px 0 30px;
+    font-size: 24px;
+    font-weight: 700;
+    margin-top: 70px;
+}
+
+.board {
+    width: 94%;
+    margin: 30px 0 30px 30px;
+    overflow: auto;
+    background: #EFE8E0;
+    border-radius: 8px;
+}
+
+.board h5{
+    font-weight: 600;
+    font-size: 14px;
+}
+
+table{
+    border-collapse: collapse;
+    text-align: center;
+}
+
+.board .head{
+    background: #392A2A;
+    color: white;
+}
+
+tr{
+    border-bottom: 1px solid #e5e7eb;
+}
+
+thead td{
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 400;
+    background: #f3f4f6;
+    padding: 15px;
+}
+
+tbody tr td{
+    padding: 10px 15px;
+}
+
+.detail a {
+    background: #392A2A;
+    padding: 2px 15px;
+    display: inline-block;
+    border-radius: 40px;
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+
+
+
+
+
+
+
+
+
+
+>>>>>>> e946703b85b64ef694020e4dca474b36090b720b
