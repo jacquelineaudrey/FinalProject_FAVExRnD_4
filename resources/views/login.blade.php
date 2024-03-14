@@ -9,14 +9,14 @@
                 <label class="form-label" for="email">Email address</label>
               <input type="email" value="" name="email" id="email" class="form-control">
             </div>
-          
+
             <div class="form-outline mb-4">
                 <label class="form-label" for="password">Password</label>
               <input type="password" name="password" id="password" class="form-control" >
             </div>
-          
+
             <button type="submit" class="btn btn-success btn-block mb-4" style="background-color: #22c55e">Sign in</button>
-          
+
 
         </form>
 </div> -->
@@ -43,7 +43,7 @@
                 </div>
                 <button type="submit" class="btn" id="loginbtn">Login</button>
                 <div class="register-login">
-                    <p>You don't have an account? <a href="/register"><b>Register here</b></a></p>
+                    <p>You don't have an account? <a href="{{route('register')}}"><b>Register here</b></a></p>
                 </div>
             </form>
         </div>
