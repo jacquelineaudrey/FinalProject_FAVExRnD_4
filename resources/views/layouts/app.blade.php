@@ -6,7 +6,8 @@
         content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
     <meta http-equiv = "X-UA-Compatible" content = "ie=edge">
     <title>JacqCart</title>
-    <link rel="stylesheet" href="{{asset('css/app.css')}}">
+    <link rel="stylesheet" href="styles.css">
+    <script src="{{asset('script.js')}}"></script>
 </head>
 <body>
 
